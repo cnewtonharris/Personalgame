@@ -19,7 +19,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
-        transform.Rotate(Vector3.up * turnSpeed * horizontalInput * Time.deltaTime);
+        transform.Translate(Vector3.forward * (Time.deltaTime * speed * verticalInput));
+        transform.Rotate(Vector3.up * (turnSpeed * horizontalInput * Time.deltaTime));
     }
 }
